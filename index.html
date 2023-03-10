@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <style>   
+            h1 {   
+                color: red;  
+            }   
+            h5 {   
+                color: green;   
+            }   
+            h2 {   
+                color: green;   
+            }   
+            p {  
+            color: red;   
+            }  
+            a {  
+            color: red;   
+            }  
+    </style>  
+    </head>
+    <body>
+        <!-- <button onclick="myFunction()">Submit</button>
+
+        <div id="snackbar"><b>Message Sent</b></div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("snackbar");
+              x.className = "show";
+              setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }
+        </script> -->
+        <div>
+            <figure id="rocketship">
+          <img src="image.png" >
+            </figure>
+        </div>    
+        <!-- <div id="my_form">
+  <p>This is my first part of the form.</p>
+  <button id="nextStep">Submit</button>
+</div>
+
+<div id="thank_you" style="display: none;">
+  <p>Thanks for filling up the form!</p>
+  <button type="submit">Close</button>
+</div>
+
+<script>
+  var nextStep = document.querySelector('#nextStep');
+
+  nextStep.addEventListener('click', function (e) {
+    e.preventDefault();
+    // Hide first view
+    document.getElementById('my_form').style.display = 'none';
+
+    // Show thank you message element
+    document.getElementById('thank_you').style.display = 'block';
+  });
+</script> -->
+<div class="container">
+    <div class="box">
+        <h3>Get in Touch</h3>
+        <div class="name">
+            <input type="text" placeholder="Name" id="name">
+        </div>
+        <div class="club">
+            <input type="text" placeholder="Club/Society" id="club">
+        </div>
+        <div class="mentor">
+            <input type="text" placeholder="Mentor" id="mentor">
+        </div>
+        <div class="message-box">
+            <textarea id="msg" cols="30" rows="10" placeholder="Description"></textarea>
+        </div>
+        <div class="co">
+            <input type="text" placeholder="Event Co-ordinator" id="co">
+        </div>
+        <div class="button">
+            <button id="send" onclick="message()">Send</button>
+        </div>
+        <div class="message">
+            <div class="success" id="success">Your Message Successfully Sent!</div>
+            <div class="danger" id="danger">Feilds Can't be Empty!</div>
+        </div>
+    </div>
+</div>
+
+<h2> Example 3 </h2>  
+<h1>download attribute used to download pdf file </h1>  
+<h5>Click on the below text to download pdf file :</h5>  
+<a href = "Event-Report.pdf" download >  
+ <b> download </b>  
+</a>  
+<h5> pdf file download with default name </h5>  
+
+        <script>
+           function message(){
+    var Name = document.getElementById('name');
+    var email = document.getElementById('club');
+    var Mentor= document.getElementById('mentor');
+    var msg = document.getElementById('msg');
+    var Co = document.getElementById('co');
+    const success = document.getElementById('success');
+    const danger = document.getElementById('danger');
+
+    if(Name.value === '' || email.value === '' || msg.value === '' || Mentor.value === '' || Co.value === ''){
+        danger.style.display = 'block';
+    }
+    else{
+        setTimeout(() => {
+            Name.value = '';
+            email.value = '';
+            msg.value = '';
+            Mentor.value='';
+            Co.value='';
+        }, 2000);
+
+        success.style.display = 'block';
+    }
+
+
+    setTimeout(() => {
+        danger.style.display = 'none';
+        success.style.display = 'none';
+    }, 4000);
+
+}
+        </script>
+    </body>
+</html>
